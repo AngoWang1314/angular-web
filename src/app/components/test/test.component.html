@@ -1,0 +1,20 @@
+<!-- <h2>Three Component</h2>
+
+<nz-cascader [nzOptions]="nzOptions" [(ngModel)]="values" (ngModelChange)="onChanges($event)"></nz-cascader>
+<a href="javascript:;" (click)="changeNzOptions()" class="change-options">Change Options</a><br /><br /> -->
+
+<div class="box" [ngClass]="isSelected ? 'moveable' : ''" (click)="onSelect()">
+  <div class="resize-box top-left" (mousedown)="resizeTopLeft($event)"></div>
+  <div class="resize-box top-middle" (mousedown)="resizeTopMiddle($event)"></div>
+  <div class="resize-box top-right" (mousedown)="resizeTopRight($event)"></div>
+  <div class="resize-box middle-left" (mousedown)="resizeMiddleLeft($event)"></div>
+  <div class="resize-box middle-right" (mousedown)="resizeMiddleRight($event)"></div>
+  <div class="resize-box bottom-left" (mousedown)="resizeBottomLeft($event)"></div>
+  <div class="resize-box bottom-middle" (mousedown)="resizeBottomMiddle($event)"></div>
+  <div class="resize-box bottom-right" (mousedown)="resizeBottomRight($event)"></div>
+  <div class="content" (mousedown)="onMouseDown($event)">
+    contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+  </div>
+</div>
+
+<!-- <my-person [person]="person" (notify)="onNotify($event)"></my-person> -->
